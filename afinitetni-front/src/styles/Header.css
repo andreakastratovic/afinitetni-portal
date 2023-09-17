@@ -1,0 +1,45 @@
+/* Header Styles */
+.header {
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    padding: 20px 0; /* Top and bottom padding */
+  }
+  
+  .header-container {
+    display: flex; /* Display header items in a row */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Center items vertically */
+    max-width: 1200px; /* Set maximum width for content */
+    margin: 0 auto; /* Center header on the page */
+    padding: 0 20px; /* Add padding to the sides */
+  }
+  
+  .logo {
+    font-size: 24px; /* Logo font size */
+    font-weight: bold; /* Logo font weight */
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* Logo text color */
+  }
+  
+  .nav {
+    list-style: none; /* Remove list bullets */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .nav li {
+    display: inline-block; /* Display navigation items horizontally */
+    margin-right: 20px; /* Space between navigation items */
+  }
+  
+  .nav a {
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* Navigation link color */
+    font-weight: bold; /* Navigation link font weight */
+    font-size: 16px; /* Navigation link font size */
+  }
+  
+  .nav a:hover {
+    color: #ff5733; /* Hover color for navigation links */
+  }
+  

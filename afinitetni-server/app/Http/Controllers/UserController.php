@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
 use App\Http\Resources\UserResource;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
@@ -117,7 +118,7 @@ class UserController extends Controller
 
         // Check if a new password is provided and update it
         if ($request->filled('password')) {
-            $user->password = Hash::make($request->input('password'));
+            $user->password = Hash::make($request->input('password')); // Use Hash to hash the password
         }
 
         $user->save();

@@ -12,6 +12,8 @@ use App\Http\Resources\BookResource;
 use App\Http\Controllers\PostController; 
 use App\Http\Resources\PostResource;
 
+use App\Http\Controllers\AuthController; 
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -22,7 +24,7 @@ use App\Http\Resources\PostResource;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
+/*
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
@@ -35,6 +37,14 @@ Route::resource('posts', PostController::class);
 
 Route::get('/users', 'UserController@index');
 
+*/
+
+//Route::post('/register', [AuthController::class, 'register']);
+
+//Route::middleware('auth:sanctum')->post('/logout', [AuthController::class, 'logout']);
+
+
+/*
 // Route for listing users using UserController@index
 Route::get('/users', [UserController::class, 'index'])
     ->name('users.index')
@@ -50,10 +60,7 @@ Route::post('/users', [UserController::class, 'store'])
     ->name('users.store')
     ->middleware('auth:api'); // Optional middleware
 
-// Route for updating a user using UserController@update
-Route::put('/users/{user}', [UserController::class, 'update'])
-    ->name('users.update')
-    ->middleware('auth:api'); // Optional middleware
+
 
 // Route for deleting a user using UserController@destroy
 Route::delete('/users/{user}', [UserController::class, 'destroy'])
@@ -100,12 +107,10 @@ Route::post('/posts', [PostController::class, 'store'])
     ->name('posts.store')
     ->middleware('auth:api'); // Optional middleware
 
-// Route for updating a post using PostController@update
-Route::put('/posts/{post}', [PostController::class, 'update'])
-    ->name('posts.update')
-    ->middleware('auth:api'); // Optional middleware
+
 
 // Route for deleting a post using PostController@destroy
 Route::delete('/posts/{post}', [PostController::class, 'destroy'])
     ->name('posts.destroy')
     ->middleware('auth:api'); // Optional middleware
+*/
